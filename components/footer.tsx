@@ -8,8 +8,9 @@ import { socialMedia } from "@/data";
 
 export const Footer = () => {
   return (
-    <footer id="contact" className="mb-[100px] w-full pb-10 md:mb-auto">
-      <div className="absolute -bottom-72 left-0 min-h-96 w-full">
+    <footer id="contact" className="relative mb-[100px] w-full pb-10 md:mb-auto">
+      {/* Background Grid */}
+      <div className="absolute -bottom-72 left-0 min-h-96 w-full -z-10">
         <Image
           src="/footer-grid.svg"
           alt="grid"
@@ -19,50 +20,72 @@ export const Footer = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+      {/* Top Heading and Message */}
+      <div className="flex flex-col items-center px-4">
+        <h1 className="heading text-center lg:max-w-[45vw]">
+          Let’s <span className="text-purple">collaborate</span> and make something great!
         </h1>
 
-        <p className="my-5 text-center text-white-200 md:mt-10">
-          Reach out to me today and let&apos;s discuss how I can help your
-          achieve your goals.
+        <p className="my-5 text-center text-white-200 md:mt-6 max-w-xl">
+          Feel free to reach out for exciting opportunities or just to say hi — I’d love to hear from you!
         </p>
 
-        <Link
-          href={`mailto:${links.ownerEmail}`}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="md:mt-10"
+        {/* Contact Form */}
+        <form
+          action="https://formspree.io/f/movlqgeo"
+          method="POST"
+          className="flex flex-col gap-4 items-center mt-6 w-full max-w-md"
         >
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-            asChild
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="Your Name"
+            className="w-full px-4 py-2 rounded-md border border-white bg-transparent text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-purple"
           />
-        </Link>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Your Email"
+            className="w-full px-4 py-2 rounded-md border border-white bg-transparent text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-purple"
+          />
+          <textarea
+            name="message"
+            required
+            placeholder="Your Message"
+            rows={5}
+            className="w-full px-4 py-2 rounded-md border border-white bg-transparent text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-purple"
+          ></textarea>
+
+          <button
+            type="submit"
+            className="px-6 py-2 rounded-md bg-purple text-white font-bold hover:bg-purple-700 transition-all duration-200"
+          >
+            Send Message
+          </button>
+        </form>
       </div>
 
-      <div className="relative z-[999] mt-16 flex flex-col items-center justify-between md:flex-row">
-        <p className="text-sm font-light md:text-base md:font-normal">
+      {/* Bottom Section with Copyright and Social */}
+      <div className="relative z-[999] mt-16 flex flex-col items-center justify-between px-4 md:flex-row">
+        <p className="text-sm font-light md:text-base md:font-normal text-white">
           Copyright &copy; {new Date().getFullYear()}{" "}
           <Link
-            href="https://sanidhy.me"
+            href="https://sangleishwari.me"
             target="_blank"
             rel="noreferrer noopener"
             className="text-purple"
           >
-            Sanidhya
+            Ishwari Sangle
           </Link>{" "}
           |{" "}
-          <Link href={links.sourceCode} className="underline">
+          <Link href={links.sourceCode} className="underline" target="_blank">
             Source Code
           </Link>
         </p>
 
-        <div className="flex items-center gap-6 md:gap-3">
+        <div className="flex items-center gap-6 md:gap-3 mt-4 md:mt-0">
           {socialMedia.map((profile) => (
             <Link
               key={profile.name}

@@ -2,7 +2,6 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { MagicButton } from "@/components/ui/magic-button";
 
@@ -10,53 +9,63 @@ export const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        My <span className="text-purple">Interests & Hobbies</span>
       </h1>
 
       <div className="my-20 flex flex-col items-center justify-center gap-4 lg:flex-row">
         <Card
-          title="Planning & Strategy"
-          icon={<MagicButton title="Phase 1" asChild />}
-          description="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
+          title="Cricket Enthusiast"
+          icon={<MagicButton title="Team Player" asChild />}
+          description="Passionate about cricket – it has taught me teamwork, strategy, and discipline, both on and off the field."
         >
           <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
+            animationSpeed={4}
+            containerClassName="bg-green-800"
           />
         </Card>
 
         <Card
-          title="Deployment & Progress Update"
-          icon={<MagicButton title="Phase 2" asChild />}
-          description="Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
+          title="Cooking Explorer"
+          icon={<MagicButton title="Creative Cook" asChild />}
+          description="I love experimenting in the kitchen. Cooking is my creative outlet and a way to express joy through flavors."
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-black"
-            colors={[
-              [236, 72, 153],
-              [232, 121, 249],
-            ]}
-            dotSize={2}
+            containerClassName="bg-orange-700"
+            colors={[[255, 193, 7], [255, 152, 0]]}
           />
         </Card>
 
-        <Card
-          title="Development & Launch"
-          icon={<MagicButton title="Phase 3" asChild />}
-          description="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600"
-            colors={[[125, 211, 252]]}
-          />
-        </Card>
+      <Card
+  title="Writer on Medium"
+  icon={<MagicButton title="View My Work" asChild />}
+  description={
+    <>
+      Writing helps me reflect and share ideas. I post on Medium. <br />
+      <a
+        href="https://medium.com/@sangleishwari1977"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-300 underline hover:text-blue-500 transition-all"
+      >
+        Visit my Medium profile
+      </a>
+    </>
+  }
+>
+  <CanvasRevealEffect
+    animationSpeed={3}
+    containerClassName="bg-indigo-800"
+    colors={[[99, 102, 241], [129, 140, 248]]}
+  />
+</Card>
+
       </div>
     </section>
   );
 };
 
+// Card component
 type CardProps = {
   title: string;
   description: string;
@@ -95,12 +104,12 @@ const Card = ({ title, description, icon, children }: CardProps) => {
           {icon}
         </div>
 
-        <h2 className="relative z-10 mt-4 text-3xl font-bold text-black opacity-0 transition  duration-200 group-hover/canvas-card:-translate-y-2 group-hover/canvas-card:text-white group-hover/canvas-card:opacity-100 dark:text-white">
+        <h2 className="relative z-10 mt-4 text-3xl font-bold text-black opacity-0 transition duration-200 group-hover/canvas-card:-translate-y-2 group-hover/canvas-card:text-white group-hover/canvas-card:opacity-100 dark:text-white">
           {title}
         </h2>
 
         <p
-          className="relative z-10 mt-4 text-sm font-bold text-black opacity-0 transition  duration-200 group-hover/canvas-card:-translate-y-2 group-hover/canvas-card:text-white group-hover/canvas-card:opacity-100 dark:text-white"
+          className="relative z-10 mt-4 text-sm font-bold text-black opacity-0 transition duration-200 group-hover/canvas-card:-translate-y-2 group-hover/canvas-card:text-white group-hover/canvas-card:opacity-100 dark:text-white"
           style={{
             color: "#e4ecff",
           }}
@@ -112,6 +121,7 @@ const Card = ({ title, description, icon, children }: CardProps) => {
   );
 };
 
+// Corner icon
 export const Icon = ({ className, ...props }: any) => {
   return (
     <svg

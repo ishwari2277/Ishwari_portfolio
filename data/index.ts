@@ -3,14 +3,14 @@ import { links } from "@/config";
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Education", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ] as const;
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Building real-world projects that address practical challenges ",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -20,7 +20,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Leading teams and delivering results ",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -40,7 +40,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Exploring emerging tech through research",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -51,7 +51,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently working on Generative AI and intelligent data systems",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -74,129 +74,141 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "FigPro - Collaborative Design Tool",
-    des: "A collaborative design tool with real-time collaboration, vector editing, and a responsive UI.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://clone-figmaa.netlify.app",
-    sourceCode: "https://github.com/sanidhyy/figma-clone",
+    title: "Nivesh: Financial Literacy and Investment Platform",
+    des: "Developed a multilingual, voice-enabled investment platform with OCR, chatbot, and fraud detection.",
+    img: "/1.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/Python.png"],
+    sourceCode: "https://github.com/ishwari2277/VH24-Imperial",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "Tarakpath: AI-Based Fast Routing Algorithm for Ships",
+    des: "Engineered an adaptive A* routing algorithm with real-time data and a Digital Twin for optimized navigation, maintenance, and fuel efficiency.",
+    img: "/Tarakapth.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://clone-yoom.netlify.app",
-    sourceCode: "https://github.com/sanidhyy/zoom-clone",
+    link: "https://github.com/ishwari2277/Tarakpath",
+    sourceCode: "https://github.com/ishwari2277/Tarakpath",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    title: "Shop-Ease: Accessible E-Commerce Platform",
+    des: "Accessible e-commerce with voice navigation, color blind mode, virtual trials, and AI-driven personalization.",
+    img: "/shopease.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://ai-imaginify.netlify.app",
-    sourceCode: "https://github.com/sanidhyy/imaginify",
+    link: "https://github.com/ishwari2277/shopease",
+    sourceCode: "https://github.com/ishwari2277/shopease",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    title: "Chikitsa: Brain Tumor Detection Using MRI Scans",
+    des: "Developed an AI system using CNNs to detect and localize brain tumors from MRI scans, enabling accurate, early diagnosis and faster clinical decisions.",
+    img: "/chikitsa.jpeg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://app-iphone.netlify.app",
-    sourceCode: "https://github.com/sanidhyy/apple-clone",
+    link: "https://github.com/ishwari2277/chikitsa",
+    sourceCode: "https://github.com/ishwari2277/chikitsa",
   },
+  {
+    id: 5,
+    title: "Trimbak Raj: Multilingual Product Showcase Website",
+    des: "Multilingual agritech website showcasing organic products with usage guides in English, Hindi, and Marathi for broad farmer accessibility.",
+    img: "/trimbakraj.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://trimbakrajagro-tech.netlify.app/",
+    sourceCode: "https://github.com/ishwari2277/Trimbakraj",
+  },
+  {
+    id: 6,
+    title: "Dream Studio : Interior Designer Website",
+    des: "Responsive, modern website for showcasing interior design portfolios, services, and testimonials, enhancing client engagement and digital presence.",
+    img: "/Dream_studio.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://prismatic-lolly-58bf88.netlify.app/",
+    sourceCode: "https://github.com/ishwari2277/Dreamy-Studio",
+  },
+
 ] as const;
 
+// In data/index.ts or data.js
 export const testimonials = [
   {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+   quote: "B.Tech in Information Technology (2022 to 2026)",
+    name: "K.K. Wagh Institute of Engineering Education and Research, Nashik",
+    title: "Final year with 8.48 CGPA. Focused on Software Engineering, Web Development, DBMS, and System Design.",
   },
   {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "B.Sc in Data Science and Applications (2024 to 2028)",
+    name: "IIT Madras (Online)",
+    title: "Pursuing with 7.6 CGPA. Studying Python, ML, Statistics, Data Structures, and Algorithms.",
   },
   {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "HSC - Maharashtra Board (2022)",
+    name: "Shri Pramod Patil Junior College,Nashik",
+    title: "Percentage: 80.83%",
   },
   {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "SSC - Maharashtra Board (2020)",
+    name: "Maratha Highschool, Nashik",
+    title: "Percentage: 96%",
   },
-  {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-] as const;
+];
+
+
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "devops",
+    img: "/devops.png",
+  
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    name: "Machine Learning",
+    img: "/machine-learning.png",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    name: "MongoDB",
+    img: "/mongodb.png",
+  },
+  {
+    id: 4,
+    name: "react",
+    img: "/react.png",
   },
   {
     id: 5,
     name: "docker.",
     img: "/dock.svg",
-    nameImg: "/dockerName.svg",
   },
 ] as const;
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Research Internship – IIT Madras",
+    desc: "Explored distributed algorithms and blockchain consensus. Improved cloud load balancing and reduced transaction delays in edge computing.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Full Stack Developer – Datacrush Analytics",
+    desc: "Built real-time, SEO-optimized MERN stack websites with responsive UI and API integrations.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
-  {
+   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Finalist – Smart India Hackathon 2024",
+    desc: "Selected as one of the top teams nationally for solving real-world problems with innovative tech solutions.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Winner – Engineering Exploration Project Contest",
+    desc: "Secured 1st place in institute-level project & poster competition organized by IIC and Mechanical Department.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -206,21 +218,16 @@ export const socialMedia = [
   {
     name: "GitHub",
     img: "/git.svg",
-    link: "https://github.com/sanidhyy",
-  },
-  {
-    name: "Twitter",
-    img: "/twit.svg",
-    link: "https://twitter.com/TechnicalShubam",
+    link: "https://github.com/ishwari2277",
   },
   {
     name: "LinkedIn",
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/sanidhyy",
+    link: "https://www.linkedin.com/in/ishwari-sangle/",
   },
 ] as const;
 
 export const techStack = {
-  stack1: ["React.js", "Next.js", "Typescript"],
-  stack2: ["Vue.js", "AWS", "MongoDB"],
+  stack1: ["React.js", "Python", "Machine Learning"],
+  stack2: ["Devops", "AWS", "MongoDB"],
 } as const;
