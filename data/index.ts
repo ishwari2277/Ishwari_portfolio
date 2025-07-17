@@ -78,6 +78,7 @@ export const projects = [
     des: "Developed a multilingual, voice-enabled investment platform with OCR, chatbot, and fraud detection.",
     img: "/1.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/Python.png"],
+     link: "https://github.com/ishwari2277/VH24-Imperial",
     sourceCode: "https://github.com/ishwari2277/VH24-Imperial",
   },
   {
