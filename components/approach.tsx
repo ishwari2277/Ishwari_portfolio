@@ -68,7 +68,7 @@ export const Approach = () => {
 // Card component
 type CardProps = {
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: React.ReactNode;
   children?: React.ReactNode;
 };
