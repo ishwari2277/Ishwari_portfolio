@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { companies, testimonials } from "@/data"; // keep as is for now
 
