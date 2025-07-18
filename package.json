@@ -92,6 +92,7 @@
     "three-globe": "^2.31.0"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -105,3 +106,4 @@
     "typescript": "^5"
   }
 }
+
